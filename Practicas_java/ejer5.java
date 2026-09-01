@@ -7,7 +7,7 @@ public class ejer5 {
 
         Scanner tc = new Scanner(System.in);
         int[] numeros = new int[0]; // Inicializar un arreglo vacío
-        String ingresar = "";
+        String ingresar;
 
         while (true) {
             System.out.println("---Menu de operaciones con arreglos:---");
