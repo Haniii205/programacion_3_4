@@ -1,16 +1,81 @@
 body {
-    background-color: #ece4b9
+    background-color: #d5e28c
+}
+section {
+    margin-bottom: 2rem;
+}
+.imagen-de-inicio {
+    /* imagen a la derecha y en la parte superior*/
+    position: absolute;
+    top: 0;
+    right: 0;
+  
+}
+p{
+    text-align: center;
+    font-size: 1.5rem;
+    color: #080000;
+    font-family: 'Times New Roman', Courier, monospace;
+}
+h1{
+    text-align: right;
+    color: #000000;
+    font-family: 'Times New Roman', Courier, monospace;
 }
 
 .card {
-    margin: 1rem;
+    color: #070000;
+    font-family: 'Times New Roman';
+    background-color: #e49393;
+    border-radius: 0.5rem;
     padding: 1rem;
-    font-size: 1.25rem;
-    border: 1px solid #000;
-    border-radius: 1rem;
+    margin: 1rem;
+    box-shadow: 0 4px 6px rgb(46, 41, 41);
+    width: 800px;
 }
 
 h1 {
     text-align: center;
     font-size: 3rem;
+    color: #020000;
+}
+h3 {
+    text-align: center;
+    font-size: 2rem;
+    color: #000000;
+    font-family: 'Times New Roman', Courier, monospace;
+}
+button {
+    display: block;
+    margin: 0 auto;;
+    font-size: 1.25rem;
+    background-color: #f5f3f3;
+    color: #000;
+    border: none;
+    border-radius: 0.5rem;
+    cursor: pointer;
+}
+#myButton {
+    display: block;
+    margin: 0 auto;
+    font-size: 1.25rem;
+    background-color: #da4e4e;
+    color: #e9dcdc;
+    border: none;
+    border-radius: 0.5rem;
+    cursor: pointer;
+}
+footer {
+    text-align: center;
+    font-size: 1rem;
+    font-family: 'Times New Roman', Courier, monospace;
+    padding: 2rem;
+    background-color: #6caee4;
+}
+main {
+    text-align: center;
+    font-size: 1.5rem;
+    padding: 2rem;
+    background-color: #a7cdec;
+    font-family: 'Times New Roman', Courier, monospace;
 }

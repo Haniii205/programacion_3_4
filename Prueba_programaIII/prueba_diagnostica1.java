@@ -1,3 +1,4 @@
+package Prueba_programaIII;
 
 public class prueba_diagnostica1 {
     public static void main(String[] args) {

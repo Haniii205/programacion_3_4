@@ -1,3 +1,4 @@
+package Prueba_programaIII;
 //sumar los extremos de dos arreglos
 public class prueba_diagnostica2 {
     public static void main(String[] args) {
