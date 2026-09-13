@@ -58,6 +58,8 @@ public class ejer22 {
         System.out.print("El mayor elemento de la matriz es: " + mayor + ", en la posicion: [" + filaMa + "]["+ columnaMa + "]");
         System.out.println();
         System.out.print("El mayor elemento de la matriz es: " + menor + ", en la posicion: [" + filaMe + "]["+ columnaMe + "]");
+        System.out.println();
+        System.out.print("--------------> ");
 
         tc.close();
     }
