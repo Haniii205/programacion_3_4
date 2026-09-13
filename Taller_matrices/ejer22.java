@@ -46,14 +46,12 @@ public class ejer22 {
                     columnaMa = j;
                 }
                 if (matriz[i][j] < menor){
-                if (matriz[i][j] > mayor)  {
                     menor = matriz[i][j];
                     filaMe = i;
                     columnaMe = j;
                 }         
                 }
             }
-        }
         System.out.println();
         System.out.print("El mayor elemento de la matriz es: " + mayor + ", en la posicion: [" + filaMa + "]["+ columnaMa + "]");
         System.out.println();
@@ -63,4 +61,4 @@ public class ejer22 {
 
         tc.close();
     }
-}
+    }
