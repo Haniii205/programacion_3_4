@@ -4,12 +4,12 @@ import java.util.Scanner;
 public class ejer24 {
     public static void main(String[] args) {
         //Pregunta 24: Se tiene la producción total de toneladas de cereales (arroz, avena, cebada, trigo)
-//cosechadas durante cada mes del año anterior. Elaborar un programa que proporcione
-//la siguiente información:
-//a. El promedio anual de toneladas cosechadas.
-//b. Cuántos meses tuvieron una cosecha superior al promedio anual?
-//c. Cuántos meses tuvieron una cosecha inferior al promedio anual?
-//d. Cuál fue el mes en que se produjeron mayor número de toneladas?
+        //cosechadas durante cada mes del año anterior. Elaborar un programa que proporcione
+        //la siguiente información:
+        //a. El promedio anual de toneladas cosechadas.
+        //b. Cuántos meses tuvieron una cosecha superior al promedio anual?
+        //c. Cuántos meses tuvieron una cosecha inferior al promedio anual?
+        //d. Cuál fue el mes en que se produjeron mayor número de toneladas?
     
 //este ejercicio lo hice mejor con scanner pq no sabia exactamente si añadir numeros predeterminados o aleatorios.
 
@@ -17,7 +17,7 @@ public class ejer24 {
         int[][] produccion = new int [12][4];
         int mesesSuper = 0;
         int mesesInfer = 0;
-        int[] totalporMes = new int [12]; //total de cada mes
+        int[] totalporMes = new int [12];
         int sumaT = 0;
         double promedio;
 
@@ -36,7 +36,7 @@ public class ejer24 {
                 totalporMes [i] += produccion [i][j];
             }
         }
-        promedio = (double) sumaT / 48;
+        promedio = (double) sumaT / 12;
         System.out.println();
         System.out.println("El promedio anual de toneladas: " + promedio);
 
