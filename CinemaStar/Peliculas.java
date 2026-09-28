@@ -1,6 +1,6 @@
 
 public class Peliculas {
-        
+
     private String nombre;
     private String idioma;
     private String tipo;
@@ -12,20 +12,25 @@ public class Peliculas {
         this.tipo = tipo;
         this.duracion = duracion;
     }
+
     public String getNombre() {
         return nombre;
     }
+
     public String getIdioma() {
+        return idioma;
+    }
+
+    public String getTipo() {
         return tipo;
     }
-    public String getTipo() {
-        return nombre;
-    }
+
     public int getDuracion() {
         return duracion;
     }
+
     public void mostrar() {
-        System.out.println(nombre + " - " + idioma + " - " + tipo + " - " + duracion + " min");
+        System.out.println(nombre + " - " + idioma + " - "
+                + tipo + " - " + duracion + " min");
     }
 }
-
