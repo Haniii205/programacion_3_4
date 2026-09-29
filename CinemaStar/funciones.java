@@ -28,22 +28,24 @@ public class funciones {
     }
 
     public void mostrarSala() {
-        System.out.print("     ");
-        for (int j = 1; j <= 12; j++) {
-            System.out.print(j + "  ");
+        //Encabezado con ancho fijo
+        System.out.print(" "); // 3 espacios para alinear con la etiqueta "A: "
+    for (int j = 1; j <= 12; j++) {
+        System.out.printf("%-3d", j); // cada número en 3 caracteres, alineado a la izquierda
+    }
+    System.out.println();
+
+    // Filas de sillas
+    for (int i = 0; i < sillas.length; i++) {
+        if (i == 6) {
+            System.out.println("<>------------------ PREFERENCIAL ------------------<>");
+        }
+        for (int j = 0; j < sillas[i].length; j++) {
+            System.out.printf("%-3s", sillas[i][j]); // cada celda en 3 caracteres
         }
         System.out.println();
-
-        for (int i = 0; i < sillas.length; i++) {
-            if (i == 6) {
-                System.out.println("<>------------------ PREFERENCIAL ------------------<>");
-            }
-            for (int j = 0; j < sillas[i].length; j++) {
-                System.out.print(sillas[i][j] + " ");
-            }
-            System.out.println();
-        }
     }
+}
 
     public boolean estaDisponible(int fila, int columna) {
         if (fila < 0 || fila >= sillas.length) return false;
