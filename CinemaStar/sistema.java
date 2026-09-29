@@ -146,6 +146,11 @@ public class sistema {
             System.out.println("Error: La Sala 3 es exclusiva para películas 3D.");
             return;
         }
+        // comprobar q las salas 1 y 2 sean solo 2d y no 3d
+        if (!salas[selSala].getEs3D() && listaPeliculas[selPeli].getTipo().equalsIgnoreCase("3D")) {
+            System.out.println("Error: Las Salas 1 y 2 no admiten películas 3D.");
+            return;
+        }
 
         System.out.println("\n==Seleccione un horario==");
         for (int i = 0; i < horas.length; i++) {
@@ -154,6 +159,13 @@ public class sistema {
 
         System.out.println("Seleccione: ");
         int selHora = teclado.nextInt() - 1;
+        for (int i = 0; i < cantFunciones; i++) {
+            if (listaFunciones[i].getSala().getNumero() == salas[selSala].getNumero() 
+                    && listaFunciones[i].getHora().equals(horas[selHora])) {
+                System.out.println("Error: Ya existe una función en esta sala para este horario.");
+                return;
+            }
+        }
 
 // Funcion union de los 3 objetos
         listaFunciones[cantFunciones] = new funciones(
