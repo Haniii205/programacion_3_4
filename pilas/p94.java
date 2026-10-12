@@ -14,7 +14,7 @@ public class p94 {
         Scanner tc = new Scanner(System.in);
         Stack<Integer>[] pilas = new Stack[6];
 
-        for (int k = 1; k < 6; k++) {
+        for (int k = 1; k <=5; k++) {
             pilas[k] = new Stack<>();
         }
         System.out.println("Ingrese pares i, j. El término 0 es para terminar.");
@@ -51,7 +51,7 @@ public class p94 {
             }
         }
         System.out.println("\nContenido final:");
-        for (int k = 1; k <= 6; k++) {
+        for (int k = 1; k <= 5; k++) {
             System.out.println("P" + k + ": " + pilas[k]);
         }
         tc.close();
