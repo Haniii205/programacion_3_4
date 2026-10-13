@@ -14,7 +14,7 @@ class Cliente {
     }
 }
 
-class P103 {
+public class P103 {
 
     public static void main(String[] args) {
         Random random = new Random();
