@@ -36,7 +36,7 @@ public class P105 {
         listaTrabajadores.add(new Trabajador("333", "Meiling", 3));
         listaTrabajadores.add(new Trabajador("555", "Valkov", 8));
 
-        //se crea la cola del trabajo diario
+        //se crea la cola del trabajo diario (osea los que trabajaron hoy)
         Queue<ReporteDiario> colaReportes = new LinkedList<>();
         colaReportes.offer(new ReporteDiario("333", "Supermercado Ara")); // Ana trabajó hoy
         colaReportes.offer(new ReporteDiario("222", "Desconocido"));    // Empleado nuevo (va entre 111 y 333)
