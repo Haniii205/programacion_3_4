@@ -18,5 +18,6 @@ public class cola {
         String sonando = colaMúsica.poll();
         System.out.println("---| Sonando ahora: " + sonando);
         System.out.println("Quedan en espera: " + colaMúsica);
+        System.out.println("¿La lista de espera está vacía?: " + colaMúsica.isEmpty());
     }
 }

@@ -14,5 +14,6 @@ public class pila {
         String regresar = historial.pop();
         System.out.println("Se presionó el botón atrás. \nRegresando a: " + regresar);
         System.out.println("Historial ahora: " + historial);
+        System.out.println("¿El historial está vacío?: " + historial.empty());
     }
 }
